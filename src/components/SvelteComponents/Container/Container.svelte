@@ -8,7 +8,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { getColor } from './utils.js'
 
-  const URL = 'http://localhost:3001/api/data.json'
+  const URL = 'https://muru7-8.github.io/respiro-namiki/api/data.json'
   let sensorValue = 400;
 
   async function fetchDataSensor () {

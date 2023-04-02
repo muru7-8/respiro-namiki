@@ -1,13 +1,15 @@
 <script>
   import P5 from 'p5-svelte';
-  import { isLoading } from '../../../context/store.js';
+  import { isLoading, count, dataInfo } from '../../../context/store.js';
   import { COLORS } from '../../../constants/constants.js'
   export let colorValue;
 
   const ambientColor = 50;
   const specularColor = 70;
   let sizeModel = 26;
-  let modelFile;
+  let modelBrus;
+  let modelAchira;
+  let modelSemillas;
 
 	const sketch = (p5) => {
 		p5.setup = () => {
@@ -55,14 +57,27 @@
       p5.scale(sizeModel)
       p5.rotateY(p5.frameCount * 0.001);
       p5.rotateX(p5.frameCount * 0.001);
-      p5.model(modelFile);
+
+      if (dataInfo[$count].name === 'BRUS') {
+        p5.model(modelBrus);
+      }
+      if (dataInfo[$count].name === 'SEMILLAS') {
+        p5.model(modelSemillas);
+      }
+      if (dataInfo[$count].name === 'ACHIRA') {
+        p5.model(modelAchira);
+      }
+
       p5.pop();
 
 		};
 
     p5.preload = () => {
       isLoading.update(() => true);
-      modelFile = p5.loadModel('../assets/models/brus.obj');
+      modelBrus = p5.loadModel('../assets/models/brus.obj');
+      modelAchira = p5.loadModel('../assets/models/achira.obj')
+      modelSemillas = p5.loadModel('../assets/models/semillas.obj')
+
     }
 
     p5.windowResized = () => {

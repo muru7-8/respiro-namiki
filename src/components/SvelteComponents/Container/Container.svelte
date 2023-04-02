@@ -8,7 +8,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { getColor } from './utils.js'
 
-  const URL = 'https://respiro-namiki.vercel.app//api/data.json'
+  const URL = 'https://respiro-namiki.vercel.app/api/data.json'
   let sensorValue = 400;
 
   async function fetchDataSensor () {

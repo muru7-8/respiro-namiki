@@ -10,7 +10,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://muru7-8.github.io/respiro-namiki',
-  base: '/',
+  site: 'https://muru7-8.github.io',
+  base: '/respiro-namiki',
   integrations: [react(), svelte(), tailwind()]
 });

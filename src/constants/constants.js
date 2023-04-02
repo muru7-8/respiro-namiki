@@ -1,6 +1,7 @@
 export const DISPOSITIVOS = [
   'dispositivo-1',
   'dispositivo-2',
+  'dispositivo-3',
   'dispositivo-4',
   'dispositivo-5',
 ]

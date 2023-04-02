@@ -28,7 +28,7 @@ export const dataInfo = [
     id: 3,
     name: "BRUS",
     userName: 'Lupita Chavez',
-    fetchId: 'dispositivo-4',
+    fetchId: 'dispositivo-3',
     city: 'Tepic, Nayarit',
     country: 'MX.',
     valueCo2: 0,

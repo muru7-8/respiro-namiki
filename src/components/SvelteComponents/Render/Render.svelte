@@ -12,7 +12,7 @@
 	const sketch = (p5) => {
 		p5.setup = () => {
 			p5.createCanvas(window.innerWidth, window.innerHeight, p5.WEBGL);
-      isLoading.update(n => n = false);
+      isLoading.update(() => false);
 		};
 
 		p5.draw = () => {
@@ -61,7 +61,7 @@
 		};
 
     p5.preload = () => {
-      isLoading.update(n => n = true);
+      isLoading.update(() => true);
       modelFile = p5.loadModel('../../../public/assets/models/brus.obj');
     }
 

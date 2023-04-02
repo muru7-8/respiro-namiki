@@ -8,8 +8,8 @@
   import { onMount, onDestroy } from 'svelte';
   import { getColor } from './utils.js'
 
-  const URL = 'https://respiro-namiki.netlify.app/api/data.json'
-  // const URL = 'http://localhost:3001/api/data.json'
+  // const URL = 'https://respiro-namiki.netlify.app/api/data.json'
+  const URL = 'http://localhost:3001/api/data.json'
   let sensorValue = 400;
 
   dataResponse.subscribe(value => {

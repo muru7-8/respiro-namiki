@@ -19,9 +19,9 @@
       let finalColor;
       const lightColor = {
       red: p5.color(255, 0, 0),
-      orange: p5.color(255, 165, 0),
-      yellow: p5.color(255, 255, 0),
-      limeGreen: p5.color(154, 205, 50),
+      orange: p5.color(255, 102, 0),
+      yellow: p5.color(255, 204, 0),
+      limeGreen: p5.color(153, 204, 0),
       green: p5.color(0, 128, 0),
       }
 

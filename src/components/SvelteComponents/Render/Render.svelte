@@ -6,7 +6,7 @@
 
   const ambientColor = 50;
   const specularColor = 70;
-  let sizeModel = 35;
+  let sizeModel = 26;
   let modelFile;
 
 	const sketch = (p5) => {
@@ -25,7 +25,7 @@
       green: p5.color(0, 128, 0),
       }
 
-      window.innerWidth > 768 ? sizeModel = 35 : sizeModel = 25;
+      window.innerWidth > 768 ? sizeModel = 35 : sizeModel = 18;
 
       p5.background(40, 0);
       p5.noStroke();

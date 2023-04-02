@@ -4,18 +4,28 @@
   import Info from '../Info/Info.svelte';
   import Loader from '../Loader/Loader.svelte';
   import Footer from '../Footer/Footer.svelte';
-  import { count, isLoading, color } from '../../../context/store.js';
+  import { count, isLoading, color, dataResponse } from '../../../context/store.js';
   import { onMount, onDestroy } from 'svelte';
   import { getColor } from './utils.js'
 
-  const URL = 'https://respiro-namiki.netlify.app/api/data.json'
+  // const URL = 'https://respiro-namiki.netlify.app/api/data.json'
+  const URL = 'http://localhost:3001/api/data.json'
   let sensorValue = 400;
+
+  dataResponse.subscribe(value => {
+    sensorValue = value[$count];
+    color.update(() => Number(sensorValue))
+  })
+
+  count.subscribe(value => {
+    sensorValue = $dataResponse[value];
+    color.update(() => Number(sensorValue))
+  })
 
   async function fetchDataSensor () {
 		const response = await fetch(URL)
 		const data = await response.json()
-    sensorValue = data[$count];
-    color.update(() => Number(sensorValue))
+    dataResponse.update(n => n = data)
 		return await data
 	}
 

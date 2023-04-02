@@ -3,6 +3,7 @@ import { writable } from "svelte/store";
 export const count = writable(0);
 export const isLoading = writable(true);
 export const color = writable('400');
+export const dataResponse = writable([])
 
 export const dataInfo = [
   {

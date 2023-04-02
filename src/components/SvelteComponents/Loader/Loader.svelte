@@ -1,6 +1,6 @@
 
 <div class="flex flex-col gap-2">
-  <img class="w-10 animate-spin" src="../../../../public/assets/images/loading.svg" alt="loading icon" />
+  <img class="w-10 animate-spin" src="../assets/images/loading.svg" alt="loading icon" />
   <p>Cargando</p>
 </div>
 

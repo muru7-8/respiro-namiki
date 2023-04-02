@@ -62,7 +62,7 @@
 
     p5.preload = () => {
       isLoading.update(() => true);
-      modelFile = p5.loadModel('../../../public/assets/models/brus.obj');
+      modelFile = p5.loadModel('../assets/models/brus.obj');
     }
 
     p5.windowResized = () => {

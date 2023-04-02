@@ -1,7 +1,7 @@
 
-<div class="flex flex-col gap-2">
-  <img class="w-10 animate-spin" src="../assets/images/loading.svg" alt="loading icon" />
-  <p>Cargando</p>
+<div class="flex flex-col gap-5">
+  <img class="w-24 animate-pulse" src="../assets/images/model-load.svg" alt="loading icon" />
+  <p class="text-lg">La atmósfera nos conecta y nos mantiene vivos.</p>
 </div>
 
 <style>

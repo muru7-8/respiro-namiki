@@ -4,6 +4,7 @@
   import Info from '../Info/Info.svelte';
   import Loader from '../Loader/Loader.svelte';
   import Footer from '../Footer/Footer.svelte';
+  import KnowMore from '../KnowMore/KnowMore.svelte';
   import { count, isLoading, color, dataResponse } from '../../../context/store.js';
   import { onMount, onDestroy } from 'svelte';
   import { getColor } from './utils.js'
@@ -48,6 +49,7 @@
   {#if !$isLoading}
     <Info dataSensor={sensorValue} color={getColor($color)}/>
     <Arrow />
+    <KnowMore />
     <Footer />
   {/if }
     <Render colorValue={getColor($color)}/>

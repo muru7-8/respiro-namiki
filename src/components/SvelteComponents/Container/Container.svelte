@@ -24,10 +24,10 @@
   })
 
   async function fetchDataSensor () {
-		const response = await fetch(URL)
-		const data = await response.json()
-    dataResponse.update(n => n = data)
-		return await data
+		// const response = await fetch(URL)
+		// const data = await response.json()
+    // dataResponse.update(n => n = data)
+		// return await data
 	}
 
   const interval = setInterval(async () => {

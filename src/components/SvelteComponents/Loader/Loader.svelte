@@ -1,7 +1,10 @@
+<script>
+  import { TEXTS } from "../../../constants/constants";
+</script>
 
 <div class="flex flex-col gap-5">
   <img class="w-24 animate-pulse" src="../assets/images/model-load.svg" alt="loading icon" />
-  <p class="text-lg">La atmósfera nos conecta y nos mantiene vivos.</p>
+  <p class="text-lg">{TEXTS.intro}</p>
 </div>
 
 <style>

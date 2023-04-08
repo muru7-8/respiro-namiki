@@ -38,3 +38,17 @@ export const COLORS = {
     value: 4000
   },
 }
+
+export const TEXTS = {
+  intro: 'La atmósfera nos conecta y nos mantiene vivos.',
+  model: {
+    next: 'SIGUIENTE MODELO',
+    previous: 'MODELO ANTERIOR'
+  },
+  sensor: 'SENSOR CO2',
+  knowMore: {
+    p1: 'Somos una comunidad interconectada para la mutua protección con independencia informacional.',
+    p2: 'Construimos Atmósfera Namiki para conocer la concentración de dióxido de carbono (CO2) en aire en los distintos sitios que habitamos.',
+    p3: 'Quien quiera puede construir su dispositivo de sensado, sumarse al proyecto y habitar esta experiencia ciudadana.'
+  }
+}

@@ -5,9 +5,7 @@ export async function get() {
   const data = await response.json();
   const dataResponse = DISPOSITIVOS.map((dispositivo) => {
     const key = data[dispositivo];
-    const lastId = Object.keys(key)[Object.keys(key).length - 1];
-    const newData = data[dispositivo][lastId].co2;
-    return newData
+    return key.co2;
   })
   return {
     body: JSON.stringify(dataResponse),

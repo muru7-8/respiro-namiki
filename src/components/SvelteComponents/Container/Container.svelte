@@ -10,7 +10,7 @@
   import { getColor } from './utils.js'
 
   const URL = 'https://respiro-namiki.netlify.app/api/data.json'
-  // const URL = 'http://localhost:3001/api/data.json'
+  // const URL = 'http://localhost:3000/api/data.json'
   let sensorValue = 400;
 
   dataResponse.subscribe(value => {
@@ -24,10 +24,10 @@
   })
 
   async function fetchDataSensor () {
-		// const response = await fetch(URL)
-		// const data = await response.json()
-    // dataResponse.update(n => n = data)
-		// return await data
+		const response = await fetch(URL)
+		const data = await response.json()
+    dataResponse.update(n => n = data)
+		return await data
 	}
 
   const interval = setInterval(async () => {

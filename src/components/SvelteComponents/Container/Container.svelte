@@ -5,12 +5,12 @@
   import Loader from '../Loader/Loader.svelte';
   import Footer from '../Footer/Footer.svelte';
   import KnowMore from '../KnowMore/KnowMore.svelte';
-  import { count, isLoading, color, dataResponse } from '../../../context/store.js';
+  import { count, isLoading, color, dataResponse, date } from '../../../context/store.js';
   import { onMount, onDestroy } from 'svelte';
   import { getColor } from './utils.js'
 
-  const URL = 'https://respiro-namiki.netlify.app/api/data.json'
-  // const URL = 'http://localhost:3000/api/data.json'
+  // const URL = 'https://respiro-namiki.netlify.app/api/data.json'
+  const URL = 'http://localhost:3000/api/data.json'
   let sensorValue = 400;
 
   dataResponse.subscribe(value => {
@@ -26,6 +26,8 @@
   async function fetchDataSensor () {
 		const response = await fetch(URL)
 		const data = await response.json()
+    const getDate = new Date().toLocaleString();
+    date.update(() => getDate)
     dataResponse.update(n => n = data)
 		return await data
 	}

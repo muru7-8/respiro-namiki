@@ -4,6 +4,7 @@ export const count = writable(0);
 export const isLoading = writable(true);
 export const color = writable('400');
 export const dataResponse = writable([])
+export const date = writable();
 
 export const dataInfo = [
   {
@@ -27,6 +28,7 @@ export const dataInfo = [
   {
     id: 3,
     name: "BRUS",
+    model: 'brus',
     userName: 'Lupita Chavez',
     fetchId: 'dispositivo-3',
     city: 'Tepic, Nayarit',

@@ -1,7 +1,7 @@
 <script>
   export let dataSensor;
   export let color;
-  import { count, dataInfo } from '../../../context/store.js';
+  import { count, dataInfo, date } from '../../../context/store.js';
 </script>
 
 <div class="absolute left-8 top-28 md:top-40 md:left-16">
@@ -15,6 +15,10 @@
     <div class="flex flex-col mt-3 md:mt-10">
       <p class="text-sm md:text-2xl">SENSOR CO2</p>
       <p class="font-bold text-4xl md:text-7xl {color}">{dataSensor}<span class="text-lg md:text-2xl ml-1">ppm</span></p>
+    </div>
+    <div class="text-xs mt-5">
+      <p>última actualización:</p>
+      <p>{$date}</p>
     </div>
     <p>_</p>
   </div>

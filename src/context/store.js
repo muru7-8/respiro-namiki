@@ -35,5 +35,15 @@ export const dataInfo = [
     city: 'Tepic, Nayarit',
     country: 'MX.',
     valueCo2: 0,
+  },
+  {
+    id: 4,
+    name: "SEMILLAS",
+    model: 'semillas',
+    userName: 'Leandro Barbeito',
+    fetchId: 'dispositivo-4',
+    city: 'Ramos Mejía, Buenos Aires',
+    country: 'AR.',
+    valueCo2: 0,
   }
 ];

@@ -5,6 +5,7 @@ export const isLoading = writable(true);
 export const color = writable('400');
 export const dataResponse = writable([])
 export const date = writable();
+export const openModal = writable();
 
 export const dataInfo = [
   {

@@ -8,6 +8,7 @@
   import { count, isLoading, color, dataResponse, date } from '../../../context/store.js';
   import { onMount, onDestroy } from 'svelte';
   import { getColor } from './utils.js';
+  import soundNamiki from '/assets/sound/respiroNamikiSound.mp3';
 
   const URL = 'https://respiro-namiki.netlify.app/api/data.json'
   // const URL = 'http://localhost:3000/api/data.json'
@@ -54,8 +55,8 @@
     <KnowMore />
     <Footer />
   {/if }
-    <audio autoplay loop>
-      <source src="../assets/sound/respiroNamikiSound.mp3" type="audio/mpeg">
+    <audio autoplay>
+      <source src={soundNamiki} type="audio/mpeg">
     </audio>
     <Render colorValue={getColor($color)}/>
 </div>

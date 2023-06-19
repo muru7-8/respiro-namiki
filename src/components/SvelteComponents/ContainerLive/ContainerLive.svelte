@@ -5,7 +5,7 @@
   import Loader from '../Loader/Loader.svelte';
   import Footer from '../Footer/Footer.svelte';
   import KnowMore from '../KnowMore/KnowMore.svelte';
-  import { count, isLoading, color, dataResponse, date } from '../../../context/store.js';
+  import { count, isLoading, color, dataResponse, date, dataInfo } from '../../../context/store.js';
   import { onMount, onDestroy } from 'svelte';
   import { getColor } from './utils.js';
 
@@ -41,6 +41,13 @@
   });
 
   onDestroy(() => clearInterval(interval));
+
+  // Navegación automática en el sitio cada 20 segundos.
+  const navigation = setInterval(() => {
+    count.update(n => n <= 0 ? dataInfo.length - 1 : n - 1);
+  }, 20000);
+
+  onDestroy(() => clearInterval(navigation));
 
 </script>
 

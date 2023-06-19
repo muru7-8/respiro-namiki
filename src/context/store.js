@@ -38,8 +38,8 @@ export const dataInfo = [
   },
   {
     id: 4,
-    name: "SEMILLAS",
-    model: 'semillas',
+    name: "TORTUGA",
+    model: 'tortuga',
     userName: 'Leandro Barbeito',
     fetchId: 'dispositivo-4',
     city: 'Ramos Mejía, Buenos Aires',

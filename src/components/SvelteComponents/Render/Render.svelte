@@ -8,9 +8,7 @@
   const specularColor = 70;
   let MODELS_IMG;
   let sizeModel = 26;
-  let modelBrus;
-  let modelAchira;
-  let modelSemillas;
+  let modelBrus, modelAchira, modelSemillas, modelTortuga;
   let imgColor = 'green'
   let isMobile
   let imgMovement = {
@@ -87,6 +85,7 @@
         dataInfo[$count].name === 'BRUS' && p5.model(modelBrus)
         dataInfo[$count].name === 'SEMILLAS' && p5.model(modelSemillas)
         dataInfo[$count].name === 'ACHIRA' && p5.model(modelAchira)
+        dataInfo[$count].name === 'TORTUGA' && p5.model(modelTortuga)
         p5.pop();
       }
 
@@ -100,7 +99,7 @@
       if (isMobile) {
         p5.push()
         p5.scale(window.innerWidth / 2000)
-        p5.image(MODELS_IMG[dataInfo[$count].name][imgColor], imgMovement.x, imgMovement.y)
+        p5.image(MODELS_IMG[dataInfo[$count].name][imgColor], imgMovement.x, imgMovement.y, 1920 * 1.25, 1080 * 1.25)
         p5.pop()
       }
 		};
@@ -113,6 +112,7 @@
         modelBrus = p5.loadModel('../assets/models/brus.obj');
         modelAchira = p5.loadModel('../assets/models/achira.obj')
         modelSemillas = p5.loadModel('../assets/models/semillas.obj')
+        modelTortuga = p5.loadModel('../assets/models/tortuga.obj')
       }
 
       MODELS_IMG = {
@@ -136,6 +136,13 @@
           yellow: p5.loadImage('../assets/images/semillas-front-yellow.png'),
           orange: p5.loadImage('../assets/images/semillas-front-orange.png'),
           red: p5.loadImage('../assets/images/semillas-front-red.png'),
+        },
+        TORTUGA: {
+          green: p5.loadImage('../assets/images/tortuga-front-green.png'),
+          limeGreen: p5.loadImage('../assets/images/tortuga-front-limeGreen.png'),
+          yellow: p5.loadImage('../assets/images/tortuga-front-yellow.png'),
+          orange: p5.loadImage('../assets/images/tortuga-front-orange.png'),
+          red: p5.loadImage('../assets/images/tortuga-front-red.png'),
         }
       }
 

@@ -55,7 +55,7 @@
     <KnowMore />
     <Footer />
   {/if }
-    <audio autoplay src={soundNamiki}></audio>
+    <iframe title="respiro-namiki sound" src={soundNamiki} allow="autoplay" id="audio"></iframe>
     <Render colorValue={getColor($color)}/>
 </div>
 

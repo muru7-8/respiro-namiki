@@ -55,9 +55,7 @@
     <KnowMore />
     <Footer />
   {/if }
-    <audio autoplay>
-      <source src={soundNamiki} type="audio/mpeg">
-    </audio>
+    <audio autoplay src={soundNamiki}></audio>
     <Render colorValue={getColor($color)}/>
 </div>
 

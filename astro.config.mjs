@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
+import { VitePWA } from 'vite-plugin-pwa'
 
 import tailwind from "@astrojs/tailwind";
 
@@ -11,5 +12,8 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   output: 'server',
   adapter: netlify(),
-  integrations: [react(), svelte(), tailwind()]
+  integrations: [react(), svelte(), tailwind()],
+  plugins: [
+    VitePWA({ registerType: 'autoUpdate' })
+  ]
 });

@@ -14,6 +14,18 @@ export default defineConfig({
   adapter: netlify(),
   integrations: [react(), svelte(), tailwind()],
   plugins: [
-    VitePWA({ registerType: 'autoUpdate' })
+    VitePWA({
+      registerType: "autoUpdate",
+      manifest,
+      workbox: {
+        globDirectory: 'dist',
+        globPatterns: [
+          '**/*.{js,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico}',
+        ],
+      // Don't fallback on document based (e.g. `/some-page`) requests
+      // This removes an errant console.log message from showing up.
+      navigateFallback: null,
+      },
+    })
   ]
 });

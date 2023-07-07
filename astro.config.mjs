@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
-import { VitePWA } from 'vite-plugin-pwa'
 import AstroPWA from '@vite-pwa/astro'
 
 import tailwind from "@astrojs/tailwind";

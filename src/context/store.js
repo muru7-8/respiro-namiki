@@ -45,5 +45,15 @@ export const dataInfo = [
     city: 'Ramos Mejía, Buenos Aires',
     country: 'AR.',
     valueCo2: 0,
+  },
+  {
+    id: 5,
+    name: "BRUS",
+    model: 'brus',
+    userName: 'MUNTREF Tecnópolis',
+    fetchId: 'dispositivo-5',
+    city: 'Villa Martelli, Buenos Aires',
+    country: 'AR.',
+    valueCo2: 0,
   }
 ];

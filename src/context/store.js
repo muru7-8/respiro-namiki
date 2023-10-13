@@ -21,7 +21,7 @@ export const dataInfo = [
     id: 2,
     name: "SEMILLAS",
     userName: 'Claudia Valente',
-    fetchId: 'dispositivo-2',
+    fetchId: 'dispositivo-5',
     city: 'Jose C. Paz, Buenos Aires',
     country: 'AR.',
     valueCo2: 0,
@@ -46,14 +46,14 @@ export const dataInfo = [
     country: 'AR.',
     valueCo2: 0,
   },
-  {
-    id: 5,
-    name: "BRUS",
-    model: 'brus',
-    userName: 'MUNTREF Tecnópolis',
-    fetchId: 'dispositivo-5',
-    city: 'Villa Martelli, Buenos Aires',
-    country: 'AR.',
-    valueCo2: 0,
-  }
+  // {
+  //   id: 5,
+  //   name: "BRUS",
+  //   model: 'brus',
+  //   userName: 'MUNTREF Tecnópolis',
+  //   fetchId: 'dispositivo-5',
+  //   city: 'Villa Martelli, Buenos Aires',
+  //   country: 'AR.',
+  //   valueCo2: 0,
+  // }
 ];

@@ -18,10 +18,10 @@ export const dataInfo = [
     valueCo2: 0
   },
   {
-    id: 2,
+    id: 6,
     name: "SEMILLAS",
     userName: 'Claudia Valente',
-    fetchId: 'dispositivo-5',
+    fetchId: 'dispositivo-6',
     city: 'Jose C. Paz, Buenos Aires',
     country: 'AR.',
     valueCo2: 0,
@@ -55,5 +55,14 @@ export const dataInfo = [
   //   city: 'Villa Martelli, Buenos Aires',
   //   country: 'AR.',
   //   valueCo2: 0,
-  // }
+  // },
+  // {
+  //   id: 7,
+  //   name: "SEMILLAS",
+  //   userName: 'MUNAR',
+  //   fetchId: 'dispositivo-7',
+  //   city: 'La Boca, Buenos Aires',
+  //   country: 'AR.',
+  //   valueCo2: 0,
+  // },
 ];

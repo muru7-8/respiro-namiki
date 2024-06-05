@@ -1,9 +1,10 @@
 export const DISPOSITIVOS = [
+  'dispositivo-1',
   'dispositivo-4',
   'dispositivo-5',
   'dispositivo-3',
   'dispositivo-6',
-  // 'dispositivo-1',
+  'dispositivo-7'
 ]
 
 export const COLORS = {

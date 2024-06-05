@@ -18,10 +18,10 @@ export const dataInfo = [
     valueCo2: 0
   },
   {
-    id: 6,
+    id: 2,
     name: "SEMILLAS",
     userName: 'Claudia Valente',
-    fetchId: 'dispositivo-6',
+    fetchId: 'dispositivo-8',
     city: 'Jose C. Paz, Buenos Aires',
     country: 'AR.',
     valueCo2: 0,

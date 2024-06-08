@@ -15,9 +15,8 @@
   import { onMount, onDestroy } from "svelte";
   import { getColor } from "../../utils/helpers";
   import soundNamiki from "/assets/sound/respiroNamikiSound.mp3";
-  import { IS_PRODUCTION } from "../../constants";
 
-  const URL = IS_PRODUCTION
+  const URL = import.meta.env.PROD
     ? "https://respiro-namiki.netlify.app/api/data.json"
     : "http://localhost:3000/api/data.json";
   let sensorValue = 400;

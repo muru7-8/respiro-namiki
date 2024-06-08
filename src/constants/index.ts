@@ -54,5 +54,3 @@ export const TEXTS = {
     p3: "Quien quiera puede construir su dispositivo de sensado, sumarse al proyecto y habitar esta experiencia ciudadana.",
   },
 };
-
-export const IS_PRODUCTION = false;
